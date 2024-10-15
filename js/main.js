@@ -8,15 +8,17 @@ let numbersElement = document.getElementById("numbersList");
 let numbersOutput = "";
 
 for (let i = 1; i <= 100; i++) {
-  numbersOutput = `Numero: ${i}`;
+  numbersOutput = `NUMERO: ${i}`;
   if (i % 3 === 0) {
-    numbersOutput = "Fizz";
+    numbersOutput = "FIZZ";
   } else if (i % 5 === 0) {
-    numbersOutput = "Buzz";
+    numbersOutput = "BUZZ";
   }
 
   if (i % 3 === 0 && i % 5 === 0) {
-    numbersOutput = "FizzBuzz";
+    numbersOutput = "FIZZBUZZ";
   }
+  console.log(numbersOutput);
+
   numbersElement.innerHTML += numbersOutput + "<br />";
 }
