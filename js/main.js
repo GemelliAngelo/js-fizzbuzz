@@ -4,11 +4,18 @@
 
 // ! RACCOLTA DATI
 // * Stampo i numeri da 1 a 100
+let numbersOutput = "";
 
-// ! ESECUZIONE
-// * Filtro i multipli di 3
-// *   - Rinomino i multipli di 3 in Fizz
-// * Filtro i multipli di 5
-// *   - Rinomino i multipli di 5 in Buzz
-// * SE multiplo di 3 e di 5
-// *   - Stampo FizzBuzz
+for (let i = 1; i <= 100; i++) {
+  numbersOutput = `Numero: ${i}`;
+  if (i % 3 === 0) {
+    numbersOutput = "Fizz";
+  } else if (i % 5 === 0) {
+    numbersOutput = "Buzz";
+  }
+
+  if (i % 3 === 0 && i % 5 === 0) {
+    numbersOutput = "FizzBuzz";
+  }
+  console.log(numbersOutput);
+}
