@@ -4,6 +4,7 @@
 
 // ! RACCOLTA DATI
 // * Stampo i numeri da 1 a 100
+let numbersElement = document.getElementById("numbersList");
 let numbersOutput = "";
 
 for (let i = 1; i <= 100; i++) {
@@ -17,5 +18,5 @@ for (let i = 1; i <= 100; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
     numbersOutput = "FizzBuzz";
   }
-  console.log(numbersOutput);
+  numbersElement.innerHTML += numbersOutput + "<br />";
 }
